@@ -481,3 +481,8 @@ ul {
   display: block;
   fill: currentColor;
 }
+.is-hidden {
+  pointer-events: none;
+  visibility: hidden;
+  opacity: 0;
+}
