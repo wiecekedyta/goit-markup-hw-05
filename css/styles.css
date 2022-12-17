@@ -84,6 +84,7 @@ ul {
   color: #2196f3;
   outline: none;
 }
+
 .link-color:link,
 .link-color:visited {
   color: #212121;
@@ -118,6 +119,13 @@ ul {
   color: #2196f3;
   fill: currentColor;
   outline: none;
+}
+.underline-active:link,
+.underline-active:visited {
+  border-bottom: 4px solid #2196f3;
+  border-radius: 2px;
+  padding-bottom: 28px;
+  color: #2196f3;
 }
 
 /* section 1 header */
@@ -221,6 +229,7 @@ ul {
 }
 .images-grid-overlay {
   position: absolute;
+  bottom: 0;
   text-transform: uppercase;
   text-align: center;
   background: rgba(47, 48, 58, 0.8);
