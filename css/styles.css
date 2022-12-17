@@ -135,6 +135,7 @@ ul {
   background-position: 50% 50%;
   max-width: 1600px;
   margin: 0 auto;
+  position: relative;
 }
 .header-one {
   font-size: 44px;
@@ -213,6 +214,25 @@ ul {
   list-style: none;
   width: 370px;
   height: 294px;
+}
+.section-two-image-grid {
+  position: relative;
+  display: flex;
+}
+.images-grid-overlay {
+  position: absolute;
+  text-transform: uppercase;
+  text-align: center;
+  background: rgba(47, 48, 58, 0.8);
+  color: #fff;
+  padding: 27px 90px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-align: center;
+  letter-spacing: 0.03em;
 }
 
 /* section 4 nasz zespol */
@@ -481,8 +501,32 @@ ul {
   display: block;
   fill: currentColor;
 }
+.modal {
+  width: 528px;
+  height: 581px;
+  background: #ffffff;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+  position: absolute;
+  text-align: right;
+}
 .is-hidden {
   pointer-events: none;
   visibility: hidden;
   opacity: 0;
+}
+.modal-x-icon {
+  fill: #000;
+  padding: 3px 3px 4px 4px;
+  margin: 6px;
+  display: block;
+}
+.modal-x-button {
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+  background: #fff;
+  padding: 0;
+  margin-top: 8px;
+  margin-right: 8px;
 }
