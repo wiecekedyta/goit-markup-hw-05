@@ -79,10 +79,12 @@ ul {
 }
 .list-style:hover {
   color: #2196f3;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .list-style:focus {
   color: #2196f3;
   outline: none;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .link-color:link,
@@ -91,10 +93,12 @@ ul {
 }
 .link-color:hover {
   color: #2196f3;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .link-color:focus {
   color: #2196f3;
   outline: none;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .nav-contact-list {
   display: flex;
@@ -114,17 +118,28 @@ ul {
 .contact-items:hover {
   color: #2196f3;
   fill: currentColor;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .contact-items:focus {
   color: #2196f3;
   fill: currentColor;
   outline: none;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.underline-active:link::after,
+.underline-active:visited::after {
+  content: "";
+  height: 4px;
+  display: block;
+  width: 100%;
+  background-color: #2196f3;
+  border-radius: 2px;
+  position: relative;
+  top: 30px;
+  color: #2196f3;
 }
 .underline-active:link,
 .underline-active:visited {
-  border-bottom: 4px solid #2196f3;
-  border-radius: 2px;
-  padding-bottom: 28px;
   color: #2196f3;
 }
 
@@ -291,12 +306,14 @@ ul {
   color: #fff;
   background-color: #2196f3;
   cursor: pointer;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .social-media-list:focus {
   color: #fff;
   background-color: #2196f3;
   cursor: pointer;
   outline: none;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .social-media-grid {
   display: flex;
@@ -326,12 +343,14 @@ ul {
   fill: #2196f3;
   cursor: pointer;
   border-color: #2196f3;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .our-client-button:focus {
   fill: #2196f3;
   cursor: pointer;
   border-color: #2196f3;
   outline: none;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .our-client-icons {
   display: flex;
@@ -369,6 +388,7 @@ ul {
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
   border-radius: 4px;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .button-style:focus {
   color: #ffffff;
@@ -377,6 +397,7 @@ ul {
     0px 2px 2px rgba(0, 0, 0, 0.12);
   border-radius: 4px;
   outline: none;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .button-list {
   display: flex;
@@ -398,11 +419,13 @@ ul {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
   cursor: pointer;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .figure-description:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
   cursor: pointer;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .figure-box-size {
   width: calc((100% - 60px) / 3);
@@ -453,10 +476,12 @@ ul {
 
 .contact-footer:hover {
   color: #2196f3;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .contact-footer:focus {
   color: #2196f3;
   outline: none;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer-box {
@@ -495,12 +520,14 @@ ul {
   color: #fff;
   background-color: #2196f3;
   cursor: pointer;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .footer-social-media-link:focus {
   color: #fff;
   background-color: #2196f3;
   cursor: pointer;
   outline: none;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .footer-social-media-list {
   display: flex;
@@ -512,6 +539,20 @@ ul {
   display: block;
   fill: currentColor;
 }
+/* MODAL WINDOW*/
+
+.backdrop {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.2);
+  transition: opacity 500ms ease, visibility 500ms ease, transform 500ms ease;
+}
 .modal {
   width: 528px;
   height: 581px;
@@ -519,14 +560,23 @@ ul {
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
-  position: absolute;
   text-align: right;
+  transform: scale(1);
+  opacity: 1;
+  visibility: 1;
+  pointer-events: initial;
+  transition: transform 500ms ease;
 }
 .is-hidden {
   pointer-events: none;
   visibility: hidden;
   opacity: 0;
+  transition: opacity 500ms ease, visibility 500ms ease, transform 500ms ease;
 }
+.is-hidden .modal {
+  transform: scale(1);
+}
+
 .modal-x-icon {
   fill: #000;
   padding: 3px 3px 4px 4px;
@@ -540,4 +590,5 @@ ul {
   padding: 0;
   margin-top: 8px;
   margin-right: 8px;
+  cursor: pointer;
 }
