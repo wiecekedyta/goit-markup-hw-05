@@ -516,7 +516,7 @@ ul {
   padding: 60px 0;
 }
 .footer-links-header {
-  font-size: 16px;
+  font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
@@ -565,6 +565,50 @@ ul {
 .footer-social-media-icon {
   display: block;
   fill: currentColor;
+}
+.newsletter-header {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+.newsletter-box {
+  margin-left: 74px;
+}
+.newsletter-form {
+  display: flex;
+}
+.newsletter-input {
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  background-color: #2f303a;
+  color: rgba(255, 255, 255, 0.6);
+  padding: 15px;
+  margin-top: 20px;
+  margin-right: 12px;
+  width: 358px;
+  box-sizing: border-box;
+}
+.newsletter-submit-button {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.06em;
+  color: #ffffff;
+  background: #2196f3;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  box-sizing: border-box;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 42px;
 }
 
 /* MODAL WINDOW*/
